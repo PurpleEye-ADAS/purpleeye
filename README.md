@@ -65,3 +65,7 @@ bash run_cameras.sh --display-width 1280 --display-height 790
 ### FPGA 整机集成
 
 器件 PG2L50H，FBG484，-6，工具 PDS 2022.2-SP6.4。用有授权的底板参考工程和匹配的 PCIe、DDR3、FIFO、PLL IP，按原项目顶层连接用户逻辑，再按板卡版本复核引脚与时钟约束。此源码目录支持用户逻辑仿真，完整 PDS 编译与烧录还需要配套工程、IP、约束与工具授权。关于代码和外部依赖的发布范围见 [THIRD_PARTY.md](THIRD_PARTY.md)。
+
+## 许可证
+
+本项目团队有权授权的自研代码采用 [MIT License](LICENSE)。第三方代码及参考工程的既有部分遵循各自原授权。技术报告和其他独立材料的发布许可见 [第三方组件与发布范围](THIRD_PARTY.md)。
