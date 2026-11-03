@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "classes": [
+    "circle",
+    "left",
+    "other",
+    "right",
+    "straight"
+  ],
+  "input_size": 128,
+  "grayscale": true,
+  "padding_rgb": [
+    114,
+    114,
+    114
+  ],
+  "input_layout": "NCHW",
+  "input_color": "RGB",
+  "input_scale": 255,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "outputs": "logits",
+  "confidence_threshold": 0.9,
+  "margin_threshold": 0.25,
+  "output_shapes": [
+    [
+      1,
+      5
+    ]
+  ],
+  "rknn_status": "converted and sampled simulator comparison passed; actual board validation required",
+  "target": "rk3568",
+  "precision": "FP16",
+  "preprocessing": "host normalized float32 NCHW; RKNN mean/std are identity",
+  "onnx_sha256": "b2ecad21f7c41c8ca7f2cfa807bc55ddfd345214e4e3e45e21388967639a5e28",
+  "rknn_sha256": "42d30deb607b3e04f0d7ca2155cb3de42182cf091c1cddb49f4049245161e9f9"
+}

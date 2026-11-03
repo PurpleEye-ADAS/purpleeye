@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "classes": [
+    "circle",
+    "left",
+    "other",
+    "right",
+    "straight"
+  ],
+  "input_size": 128,
+  "grayscale": true,
+  "padding_rgb": [
+    114,
+    114,
+    114
+  ],
+  "input_layout": "NCHW",
+  "input_color": "RGB",
+  "input_scale": 255,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "outputs": "logits",
+  "confidence_threshold": 0.8,
+  "margin_threshold": 0.25,
+  "target": "rk3568",
+  "precision": "FP16",
+  "output_shapes": [
+    [
+      1,
+      5
+    ]
+  ],
+  "onnx_sha256": "9bc71d5e3c5f3a73ce02baf04b6c43242d1bc48363416e259dabeda932b296f6",
+  "rknn_sha256": "50c7653d2302838a3fdb71e8dbebc42da17df35d33f540dc9516c016a384f361",
+  "purpose": "Camera-only adaptation; HDMI model remains unchanged",
+  "validation_scope": "Public heldout crops and frame-disjoint crops from the same camera recording; live validation pending"
+}

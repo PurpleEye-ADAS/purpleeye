@@ -1,0 +1,29 @@
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.env
+.env.*
+# Generated and locally supplied artifacts
+rk3568/results/
+rk3568/tmp/
+rk3568/test_media/
+fpga/sim/work/
+*.wlf
+*.vcd
+transcript
+modelsim.ini
+*.log
+mosaic_frame.hex
+*.so
+*.ko
+*.rknn
+*.onnx
+*.pt
+*.sbit
+*.sfc
+*.mp4
+*.zip
+*.tar.gz
+rk3568/tests/fixtures/

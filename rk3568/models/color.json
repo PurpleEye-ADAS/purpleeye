@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "classes": [
+    "red",
+    "yellow",
+    "green",
+    "off"
+  ],
+  "input_size": 640,
+  "input_layout": "NCHW",
+  "input_color": "RGB",
+  "detection_context": "full_frame",
+  "input_scale": 255,
+  "padding_rgb": [
+    114,
+    114,
+    114
+  ],
+  "resize": "letterbox",
+  "outputs": "three NCHW raw convolution logits; CPU sigmoid/anchor decode/NMS",
+  "confidence_threshold": 0.65,
+  "nms_iou": 0.45,
+  "anchors": [
+    [
+      [
+        2.8203125,
+        7.453125
+      ],
+      [
+        5.86328125,
+        14.328125
+      ],
+      [
+        8.90625,
+        23.4375
+      ]
+    ],
+    [
+      [
+        18.046875,
+        18.9375
+      ],
+      [
+        12.890625,
+        31.53125
+      ],
+      [
+        16.34375,
+        40.15625
+      ]
+    ],
+    [
+      [
+        21.03125,
+        49.90625
+      ],
+      [
+        29.015625,
+        65.875
+      ],
+      [
+        50.875,
+        124.4375
+      ]
+    ]
+  ],
+  "strides": [
+    8.0,
+    16.0,
+    32.0
+  ],
+  "output_shapes": [
+    [
+      1,
+      27,
+      80,
+      80
+    ],
+    [
+      1,
+      27,
+      40,
+      40
+    ],
+    [
+      1,
+      27,
+      20,
+      20
+    ]
+  ],
+  "activation": "ReLU",
+  "precision": "INT8",
+  "weights_sha256": "e5bf9ef4e84ecd79b082223dcc0fd3cc8d30c5192ae78ce104b714da49080588",
+  "onnx_sha256": "3c5be0c464de1e02a31cc04b42319110a313a1a5539e31602083d25d651b1bd5",
+  "calibration_samples": 98,
+  "calibration_split": "train",
+  "target": "rk3568",
+  "backend": "RKNN NPU",
+  "rknn_sha256": "9d386441a4c9cc65ed6824496cfe042e0dc589d0dd4d2c925162d408a7720a6e"
+}
